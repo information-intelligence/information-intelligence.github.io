@@ -1,64 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Information and Intelligence Group</title>
-  <style>
-    :root{--sbu-red:#C41230;--sbu-gray:#333;--max-width:900px}
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--sbu-gray);margin:0;padding:0;background:#fff}
-    header{background:linear-gradient(180deg,rgba(196,18,48,0.06),transparent);border-bottom:1px solid #eee}
-    .container{max-width:var(--max-width);margin:0 auto;padding:24px}
-    .brand{display:flex;align-items:center;gap:16px}
-    .brand img{height:64px}
-    nav{margin-top:8px}
-    nav a{color:var(--sbu-red);text-decoration:none;margin-right:16px;font-weight:600}
-    main{padding:32px 24px}
-    footer{background:#f8f8f8;border-top:1px solid #eee;padding:16px;color:#666;text-align:center}
-    .attribution{font-size:0.9rem;color:#444}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information and Intelligence Group</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="brand">
-        <img src="/images/ai3-logo.png" alt="AI3 logo" />
-        <div>
-          <h1 style="margin:0;font-size:1.5rem">Information and Intelligence Group</h1>
-          <div style="color:#555">Lav Varshney</div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Information and Intelligence Group</h1>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pages/research.html">Research</a></li>
+                <li><a href="pages/people.html">People</a></li>
+                <li><a href="pages/publications.html">Publications</a></li>
+                <li><a href="pages/resources.html">Resources</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
         </div>
-      </div>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/pages/contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+    </nav>
 
-  <main>
-    <div class="container">
-      <h2>About</h2>
-      <p>The Information and Intelligence Group focuses on research at the intersection of information theory and artificial intelligence. We develop theory, methods, and systems to make intelligent systems more reliable, interpretable, and effective.</p>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Information and Intelligence Group</h1>
+            <h2>Led by Prof. Lav Varshney</h2>
+            <p>Advancing research in information theory, intelligence systems, and interdisciplinary applications</p>
+        </div>
+    </header>
 
-      <section>
-        <h3>Current</h3>
-        <p>Principal Investigator: Lav Varshney</p>
-        <p>Affiliation: Stony Brook University</p>
-      </section>
+    <main class="container">
+        <section class="intro">
+            <h2>Welcome</h2>
+            <p>
+                The Information and Intelligence Group conducts cutting-edge research at the intersection of 
+                information theory, machine learning, network science, and their applications to real-world problems. 
+                Our work spans fundamental theory and practical implementations.
+            </p>
+        </section>
 
-      <section class="attribution">
-        <h4>Attribution</h4>
-        <p>This site incorporates work and assets contributed by collaborators; see the repository history for details and commit attributions.</p>
-      </section>
-    </div>
-  </main>
+        <section class="featured">
+            <div class="featured-box research-box">
+                <h3>Research Areas</h3>
+                <p>Explore our research in information theory, network analysis, machine learning, and applications across diverse domains.</p>
+                <a href="pages/research.html" class="btn">Learn More</a>
+            </div>
+            <div class="featured-box people-box">
+                <h3>Our Team</h3>
+                <p>Meet the faculty, researchers, students, and collaborators who drive our research forward.</p>
+                <a href="pages/people.html" class="btn">View Team</a>
+            </div>
+            <div class="featured-box publications-box">
+                <h3>Publications</h3>
+                <p>Access our latest papers, journal articles, and conference proceedings.</p>
+                <a href="pages/publications.html" class="btn">View Publications</a>
+            </div>
+        </section>
 
-  <footer>
-    <div class="container">
-      <div>Contact: <a href="mailto:varshney@alum.mit.edu">varshney@alum.mit.edu</a></div>
-      <div style="margin-top:8px">&copy; 2026 Information and Intelligence Group</div>
-      <div style="margin-top:8px"><img src="/images/sbu-ai-logo.png" alt="SBU AI logo" style="height:28px" /></div>
-    </div>
-  </footer>
+        <section class="news">
+            <h2>Recent News</h2>
+            <div class="news-item">
+                <h4>Research Group Established</h4>
+                <p><em>Latest updates will appear here</em></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Information and Intelligence Group. All rights reserved.</p>
+    </footer>
 </body>
 </html>
