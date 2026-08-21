@@ -24,7 +24,7 @@ body {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-bottom: 4px solid #C10404;
+    border-bottom: 4px solid #990000;
 }
 
 .nav-container {
@@ -71,14 +71,14 @@ body {
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: #C10404;
-    border-bottom: 3px solid #C10404;
+    color: #990000;
+    border-bottom: 3px solid #990000;
     background-color: #F5F5F5;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #C10404 0%, #A30303 100%);
+    background: linear-gradient(135deg, #990000 0%, #A30303 100%);
     color: white;
     padding: 100px 20px;
     text-align: center;
@@ -119,7 +119,7 @@ body {
     margin: 25px auto;
     border-radius: 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border-left: 5px solid #C10404;
+    border-left: 5px solid #990000;
 }
 
 .page-content h1 {
@@ -145,14 +145,14 @@ h2 {
     color: #222222;
     font-size: 2.1em;
     margin-bottom: 25px;
-    border-left: 5px solid #C10404;
+    border-left: 5px solid #990000;
     padding-left: 18px;
     font-weight: 700;
     letter-spacing: -0.5px;
 }
 
 h3 {
-    color: #C10404;
+    color: #990000;
     font-size: 1.35em;
     margin-top: 20px;
     margin-bottom: 12px;
@@ -173,7 +173,7 @@ p {
     border-radius: 0;
     margin-bottom: 35px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border-left: 5px solid #C10404;
+    border-left: 5px solid #990000;
 }
 
 .intro p {
@@ -195,7 +195,7 @@ p {
     padding: 35px;
     border-radius: 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border-left: 5px solid #C10404;
+    border-left: 5px solid #990000;
     transition: all 0.3s ease;
     position: relative;
 }
@@ -219,7 +219,7 @@ p {
 /* Buttons */
 .btn {
     display: inline-block;
-    background-color: #C10404;
+    background-color: #990000;
     color: white;
     padding: 12px 28px;
     text-decoration: none;
@@ -244,11 +244,11 @@ p {
     padding: 35px;
     border-radius: 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border-left: 5px solid #C10404;
+    border-left: 5px solid #990000;
 }
 
 .news-item {
-    border-left: 4px solid #C10404;
+    border-left: 4px solid #990000;
     padding-left: 20px;
     margin-bottom: 22px;
     padding-top: 10px;
@@ -267,7 +267,7 @@ p {
     padding: 25px;
     margin-bottom: 22px;
     border-radius: 0;
-    border-left: 5px solid #C10404;
+    border-left: 5px solid #990000;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
@@ -278,7 +278,7 @@ p {
 
 .research-item li:before {
     content: "▸ ";
-    color: #C10404;
+    color: #990000;
     font-weight: bold;
     margin-right: 10px;
 }
@@ -293,7 +293,7 @@ p {
     padding: 30px;
     border-radius: 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border-left: 5px solid #C10404;
+    border-left: 5px solid #990000;
     margin-bottom: 22px;
     transition: all 0.3s ease;
 }
@@ -303,7 +303,7 @@ p {
 }
 
 .person-card.director {
-    border-left: 5px solid #C10404;
+    border-left: 5px solid #990000;
     background: linear-gradient(135deg, #FFFFFF 0%, #F9F9F9 100%);
 }
 
@@ -314,7 +314,7 @@ p {
 }
 
 .person-card .title {
-    color: #C10404;
+    color: #990000;
     font-weight: 700;
     font-size: 1.05em;
     margin-bottom: 15px;
@@ -336,7 +336,7 @@ p {
     background: white;
     padding: 30px;
     border-radius: 0;
-    border-left: 5px solid #C10404;
+    border-left: 5px solid #990000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
@@ -347,7 +347,7 @@ p {
     border-radius: 0;
     margin-bottom: 30px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border-left: 5px solid #C10404;
+    border-left: 5px solid #990000;
 }
 
 .filter-options {
@@ -375,7 +375,7 @@ p {
 
 .filter-options select:focus {
     outline: none;
-    border-color: #C10404;
+    border-color: #990000;
     box-shadow: 0 0 0 3px rgba(193, 4, 4, 0.1);
 }
 
@@ -384,7 +384,7 @@ p {
     padding: 30px;
     border-radius: 0;
     margin-bottom: 22px;
-    border-left: 5px solid #C10404;
+    border-left: 5px solid #990000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
 }
@@ -394,7 +394,7 @@ p {
 }
 
 .publication h3 {
-    color: #222222;
+    color: #990000;
     margin-top: 0;
     font-size: 1.25em;
 }
@@ -426,10 +426,10 @@ p {
 }
 
 .pub-links .link {
-    color: #C10404;
+    color: #990000;
     text-decoration: none;
     border: none;
-    border-bottom: 2px solid #C10404;
+    border-bottom: 2px solid #990000;
     transition: all 0.3s ease;
     font-weight: 600;
     font-size: 0.9em;
@@ -459,9 +459,9 @@ p {
 }
 
 .external-profiles a {
-    color: #C10404;
+    color: #990000;
     text-decoration: none;
-    border-bottom: 2px solid #C10404;
+    border-bottom: 2px solid #990000;
     font-weight: 600;
     transition: all 0.3s ease;
 }
@@ -481,7 +481,7 @@ p {
     padding: 25px;
     margin-bottom: 22px;
     border-radius: 0;
-    border-left: 5px solid #C10404;
+    border-left: 5px solid #990000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
@@ -492,7 +492,7 @@ p {
 
 .resource-item li:before {
     content: "✓ ";
-    color: #C10404;
+    color: #990000;
     font-weight: bold;
     margin-right: 10px;
 }
@@ -503,7 +503,7 @@ p {
     padding: 30px;
     border-radius: 0;
     margin-bottom: 30px;
-    border-left: 5px solid #C10404;
+    border-left: 5px solid #990000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
@@ -519,7 +519,7 @@ p {
     padding: 30px;
     border-radius: 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    border-left: 5px solid #C10404;
+    border-left: 5px solid #990000;
     transition: all 0.3s ease;
 }
 
@@ -534,9 +534,9 @@ p {
 }
 
 .contact-item a {
-    color: #C10404;
+    color: #990000;
     text-decoration: none;
-    border-bottom: 2px solid #C10404;
+    border-bottom: 2px solid #990000;
     font-weight: 600;
     transition: all 0.3s ease;
 }
@@ -551,7 +551,7 @@ p {
     padding: 35px;
     border-radius: 0;
     margin-bottom: 40px;
-    border-left: 5px solid #C10404;
+    border-left: 5px solid #990000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
@@ -588,7 +588,7 @@ p {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #C10404;
+    border-color: #990000;
     background-color: #FFFFFF;
     box-shadow: 0 0 0 3px rgba(193, 4, 4, 0.1);
 }
@@ -598,7 +598,7 @@ p {
     padding: 30px;
     border-radius: 0;
     text-align: center;
-    border-left: 5px solid #C10404;
+    border-left: 5px solid #990000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
@@ -612,7 +612,7 @@ p {
 
 .social-links a {
     color: white;
-    background-color: #C10404;
+    background-color: #990000;
     padding: 12px 24px;
     border-radius: 0;
     text-decoration: none;
@@ -634,7 +634,7 @@ footer {
     text-align: center;
     padding: 35px 20px;
     margin-top: 60px;
-    border-top: 4px solid #C10404;
+    border-top: 4px solid #990000;
 }
 
 footer p {
