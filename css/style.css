@@ -990,3 +990,60 @@ body:has(.member-list) .logo {
         line-height: 1.5;
     }
 }
+
+/* Overview: restrained academic homepage, without hero or card treatments. */
+.overview-page {
+    background: #ffffff;
+}
+.overview-page .overview-content {
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 40px 24px 45px;
+}
+.overview-page .overview-intro,
+.overview-page .overview-news {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: 0;
+    box-shadow: none;
+}
+.overview-page .overview-content h2 {
+    margin: 0 0 22px;
+    padding: 0;
+    border: 0;
+    color: #222222;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+.overview-page .overview-content h3 {
+    margin: 0 0 8px;
+    color: #222222;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+.overview-page .overview-content p {
+    margin: 0 0 18px;
+    color: #333333;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+.overview-page .overview-content a {
+    color: #990000;
+    text-underline-offset: 3px;
+}
+.overview-page .overview-news {
+    margin-top: 30px;
+}
+.overview-page .overview-news p {
+    margin-bottom: 0;
+}
+@media (max-width: 640px) {
+    .overview-page .overview-content {
+        padding: 28px 18px 35px;
+    }
+    .overview-page .overview-content h2 {
+        font-size: 1.5rem;
+    }
+}
