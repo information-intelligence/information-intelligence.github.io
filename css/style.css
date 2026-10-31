@@ -1047,3 +1047,26 @@ body:has(.member-list) .logo {
         font-size: 1.5rem;
     }
 }
+
+/* Unified logo-only SBU footer, matching the Publications page's former logo panel. */
+main footer.sbu-footer {
+    background: #ffffff;
+    color: #222222;
+    text-align: left;
+    padding: 35px;
+    margin: 30px 0 0;
+    border: 0;
+    border-left: 5px solid #990000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+main footer.sbu-footer img {
+    display: block;
+    height: 2.5em;
+    width: auto;
+    max-width: 100%;
+}
+@media (max-width: 640px) {
+    main footer.sbu-footer {
+        padding: 22px 18px;
+    }
+}
