@@ -719,3 +719,34 @@ footer p {
 .p-20 {
     padding: 20px;
 }
+
+/* Publication source links and locally hosted DOI/PDF badges */
+.publication-source-link {
+    color: #990000;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+}
+.publication-source-link:hover, .publication-source-link:focus-visible {
+    color: #A30303;
+}
+.publication-icon-link {
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+    margin-left: 5px;
+    line-height: 1;
+    text-decoration: none;
+    border: 0;
+    border-radius: 3px;
+}
+.publication-icon-link img {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    vertical-align: middle;
+}
+.publication-icon-link:hover, .publication-icon-link:focus-visible {
+    opacity: 0.75;
+    outline-offset: 3px;
+}
