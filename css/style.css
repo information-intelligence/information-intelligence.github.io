@@ -720,6 +720,12 @@ footer p {
     padding: 20px;
 }
 
+/* Subtle distinction for parenthetical publication honors */
+.publication-honor {
+    color: #B24F5B;
+    font-weight: 500;
+}
+
 /* Publication source links and locally hosted DOI/PDF badges */
 .publication-source-link {
     color: #990000;
