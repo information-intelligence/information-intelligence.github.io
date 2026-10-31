@@ -194,8 +194,8 @@ p {
     background: white;
     padding: 35px;
     border-radius: 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     border-left: 5px solid #990000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     position: relative;
 }
@@ -757,64 +757,156 @@ footer p {
     outline-offset: 3px;
 }
 
-/* People: equal presentation for current and past members */
+/* People: consistent portraits and readable, responsive biographies */
 .member-list {
+    --member-photo-width: 160px;
     display: grid;
-    gap: 22px;
+    gap: 24px;
+    min-width: 0;
 }
 .member-entry {
     display: grid;
-    grid-template-columns: 150px minmax(0, 1fr);
+    grid-template-columns: var(--member-photo-width) minmax(0, 1fr);
     align-items: start;
-    gap: 22px;
-    padding: 24px;
+    gap: clamp(18px, 2.5vw, 30px);
+    min-width: 0;
+    padding: clamp(16px, 2.5vw, 28px);
     background: #FFFFFF;
     border-left: 4px solid #990000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
-.member-entry--no-photo {
-    grid-template-columns: 1fr;
-}
 .member-photo {
-    width: 150px;
-    height: auto;
-    max-height: 200px;
-    object-fit: contain;
-    object-position: top center;
     display: block;
+    width: var(--member-photo-width);
+    max-width: 100%;
+    height: auto;
+    max-height: none;
+    justify-self: center;
+    align-self: start;
 }
 .member-details {
     min-width: 0;
+    width: 100%;
+    max-width: 72ch;
+    overflow-wrap: anywhere;
+    text-align: left;
+}
+.member-entry--no-photo .member-details {
+    grid-column: 2;
 }
 .member-details h3 {
     margin: 0 0 12px;
     color: #990000;
     font-size: 1.3em;
-    line-height: 1.4;
+    line-height: 1.35;
 }
 .member-details p {
-    margin: 0 0 10px;
+    margin: 0 0 12px;
+    line-height: 1.7;
 }
 .member-details p:last-child {
     margin-bottom: 0;
 }
 .member-details a {
     color: #990000;
+    text-underline-offset: 3px;
+}
+.member-details a:focus-visible {
+    outline: 2px solid #990000;
+    outline-offset: 3px;
 }
 .member-undergraduate-alumni {
     margin-top: 26px;
-    padding: 20px 24px;
+    padding: clamp(16px, 2.5vw, 24px);
     background: #F7F7F7;
     line-height: 1.8;
+    overflow-wrap: anywhere;
 }
-@media (max-width: 640px) {
+.people-section > h2 {
+    font-size: clamp(1.4rem, 2.6vw, 1.85rem);
+    line-height: 1.3;
+    margin-bottom: 22px;
+}
+
+/* Scope page framing and navigation changes to the People page. */
+body:has(.member-list) .page-content {
+    max-width: 1100px;
+    padding: clamp(16px, 3vw, 36px);
+}
+body:has(.member-list) .logo {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+.people-section ~ .news > h2 {
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+    padding-left: 0;
+    border-left: 0;
+}
+.people-section ~ .news > h2 > span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
     .member-entry {
-        grid-template-columns: 1fr;
-        gap: 14px;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
         padding: 18px;
     }
-    .member-photo {
-        width: 140px;
-        max-height: 180px;
+    .member-entry--no-photo .member-details {
+        grid-column: 1;
+    }
+    .member-details {
+        max-width: none;
+    }
+    .people-section ~ .join-section,
+    .people-section ~ .news {
+        padding: 18px;
+    }
+    .people-section ~ .join-section > h2 {
+        font-size: 1.4rem;
+        line-height: 1.3;
+    }
+    .people-section ~ .news > h2 > span {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* A short, wrapping menu leaves room for biographies on small screens. */
+    body:has(.member-list) .navbar {
+        position: static;
+    }
+    body:has(.member-list) .nav-container {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 16px;
+    }
+    body:has(.member-list) .logo {
+        flex: none;
+        margin: 14px 0 6px;
+        font-size: 1.2rem;
+        line-height: 1.35;
+    }
+    body:has(.member-list) .nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0;
+        margin-bottom: 8px;
+    }
+    body:has(.member-list) .nav-links a {
+        min-height: 44px;
+        padding: 10px 5px;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-height: 500px) {
+    body:has(.member-list) .navbar {
+        position: static;
     }
 }
