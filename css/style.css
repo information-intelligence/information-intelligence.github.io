@@ -912,79 +912,81 @@ body:has(.member-list) .logo {
 }
 
 
-/* Compact funding bibliography, modeled on the Illinois group's funding listing. */
+/* Funding: compact text-based layout, following the Illinois funding list. */
 .funding-page {
-    max-width: 1050px;
+    max-width: 1000px;
+    border-left: 0;
+    box-shadow: none;
 }
 .funding-page > h1 {
-    font-size: clamp(1.8rem, 3vw, 2.25rem);
-    margin-bottom: 22px;
-    line-height: 1.2;
+    font-size: 1.85rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 22px;
+    letter-spacing: -0.3px;
 }
-.funding-intro {
-    margin-bottom: 28px;
+.funding-page .funding-intro {
+    margin-bottom: 24px;
 }
-.funding-intro p {
-    margin-bottom: 10px;
+.funding-page .funding-intro p {
+    margin: 0 0 9px;
     line-height: 1.65;
 }
-.funding-intro a {
+.funding-page .funding-intro a {
     color: #990000;
 }
-.funding-group {
-    margin: 0 0 19px;
-}
-.funding-group h2 {
-    font-size: 1.05rem;
-    line-height: 1.45;
-    font-weight: 700;
-    color: #222222;
-    border: 0;
+.funding-page .funding-group {
+    margin: 0 0 12px;
     padding: 0;
-    margin: 0 0 4px;
-    letter-spacing: 0;
+    border: none;
+    box-shadow: none;
+    background: transparent;
 }
-.funding-group ul {
-    list-style: none;
-    padding: 0 0 0 19px;
+.funding-page .funding-sponsor {
+    margin: 0 0 2px;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.45;
+    font-weight: 600;
+    color: #222222;
+}
+.funding-page .funding-group ul {
+    list-style: disc;
     margin: 0;
+    padding: 0 0 0 26px;
 }
-.funding-group li {
-    position: relative;
-    padding-left: 14px;
-    margin: 2px 0 5px;
-    line-height: 1.55;
-    font-size: 0.98rem;
+.funding-page .funding-group li {
+    position: static;
+    margin: 0 0 3px;
+    padding: 0;
     color: #444444;
+    font-size: 0.97rem;
+    line-height: 1.5;
     overflow-wrap: anywhere;
 }
-.funding-group li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #990000;
+.funding-page .funding-group li::before {
+    content: none;
 }
-.funding-role {
-    font-size: 0.9em;
+.funding-page .funding-group li::marker {
+    color: #666666;
+}
+.funding-page .funding-source-note {
+    margin-top: 23px;
     color: #777777;
-    white-space: normal;
-}
-.funding-source-note {
-    margin-top: 27px;
     font-size: 0.84rem;
-    color: #777777;
 }
 @media (max-width: 640px) {
-    .funding-group {
-        margin-bottom: 20px;
-    }
-    .funding-group h2 {
-        font-size: 1rem;
-    }
-    .funding-group li {
-        font-size: 0.94rem;
-    }
     .funding-page {
-        padding: 25px 18px;
+        padding: 22px 17px;
+    }
+    .funding-page > h1 {
+        font-size: 1.65rem;
+    }
+    .funding-page .funding-sponsor {
+        font-size: 0.98rem;
+    }
+    .funding-page .funding-group li {
+        font-size: 0.94rem;
+        line-height: 1.5;
     }
 }
