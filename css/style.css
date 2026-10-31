@@ -756,3 +756,65 @@ footer p {
     opacity: 0.75;
     outline-offset: 3px;
 }
+
+/* People: equal presentation for current and past members */
+.member-list {
+    display: grid;
+    gap: 22px;
+}
+.member-entry {
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr);
+    align-items: start;
+    gap: 22px;
+    padding: 24px;
+    background: #FFFFFF;
+    border-left: 4px solid #990000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.member-entry--no-photo {
+    grid-template-columns: 1fr;
+}
+.member-photo {
+    width: 150px;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    object-position: top center;
+    display: block;
+}
+.member-details {
+    min-width: 0;
+}
+.member-details h3 {
+    margin: 0 0 12px;
+    color: #990000;
+    font-size: 1.3em;
+    line-height: 1.4;
+}
+.member-details p {
+    margin: 0 0 10px;
+}
+.member-details p:last-child {
+    margin-bottom: 0;
+}
+.member-details a {
+    color: #990000;
+}
+.member-undergraduate-alumni {
+    margin-top: 26px;
+    padding: 20px 24px;
+    background: #F7F7F7;
+    line-height: 1.8;
+}
+@media (max-width: 640px) {
+    .member-entry {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        padding: 18px;
+    }
+    .member-photo {
+        width: 140px;
+        max-height: 180px;
+    }
+}
