@@ -1070,3 +1070,52 @@ main footer.sbu-footer img {
         padding: 22px 18px;
     }
 }
+
+/* Accessible keyboard bypass link, displayed only when focused. */
+.skip-link {
+    position: fixed;
+    z-index: 2000;
+    top: 12px;
+    left: 12px;
+    transform: translateY(-160%);
+    padding: 10px 16px;
+    background: #ffffff;
+    color: #222222;
+    border: 2px solid #990000;
+    font-weight: 700;
+    text-decoration: none;
+}
+.skip-link:focus,
+.skip-link:focus-visible {
+    transform: none;
+    outline: 3px solid #222222;
+    outline-offset: 2px;
+}
+
+/* Text for screen-reader users, without changing visible link layout. */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Respect visitors' preference for reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    .featured-box:hover {
+        transform: none;
+    }
+}
